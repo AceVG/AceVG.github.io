@@ -5,52 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ali Berico | Operations & CRM Automation Specialist</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      line-height: 1.6;
-      color: #222;
-      background: #f7f7f7;
-    }
+  :root {
+    --bg: #0F172A;
+    --card: #111827;
+    --text: #F8FAFC;
+    --muted: #94A3B8;
+    --primary: #38BDF8;
+    --accent: #22D3EE;
+    --success: #10B981;
+    --border: #1E293B;
+  }
 
-    header, section {
-      background: white;
-      padding: 28px;
-      margin-bottom: 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    line-height: 1.6;
+    color: var(--text);
+    background:
+      radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 32%),
+      radial-gradient(circle at top right, rgba(34, 211, 238, 0.10), transparent 28%),
+      var(--bg);
+  }
 
-    h1, h2, h3 {
-      margin-top: 0;
-    }
+  header, section {
+    background: rgba(17, 24, 39, 0.92);
+    padding: 30px;
+    margin-bottom: 22px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+  }
 
-    .tagline {
-      font-size: 1.1rem;
-      color: #555;
-    }
+  h1 {
+    font-size: 2.4rem;
+    margin-bottom: 8px;
+  }
 
-    .project {
-      border-top: 1px solid #ddd;
-      padding-top: 18px;
-      margin-top: 18px;
-    }
+  h2 {
+    color: var(--primary);
+    margin-bottom: 16px;
+  }
 
-    .tools span {
-      display: inline-block;
-      background: #eee;
-      padding: 6px 10px;
-      margin: 4px;
-      border-radius: 999px;
-      font-size: 0.9rem;
-    }
+  h3 {
+    color: var(--accent);
+  }
 
-    a {
-      color: #0056b3;
-    }
-  </style>
+  p, li {
+    color: var(--text);
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+    color: var(--muted);
+  }
+
+  .project {
+    border-top: 1px solid var(--border);
+    padding-top: 18px;
+    margin-top: 18px;
+  }
+
+  .result {
+    color: var(--success);
+    font-weight: bold;
+  }
+
+  .tools span {
+    display: inline-block;
+    background: rgba(56, 189, 248, 0.08);
+    color: var(--text);
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    padding: 7px 12px;
+    margin: 5px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+  }
+
+  a {
+    color: var(--primary);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+
+  strong {
+    color: var(--text);
+  }
+</style>
 </head>
 <body>
 
