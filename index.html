@@ -3,244 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <title>Ali Berico | Operations & CRM Automation Specialist</title>
 
-  <style>
-    :root {
-      --bg: #0F172A;
-      --card: #111827;
-      --card-light: #1E293B;
-      --text: #F8FAFC;
-      --muted: #94A3B8;
-      --primary: #38BDF8;
-      --accent: #22D3EE;
-      --success: #10B981;
-      --border: #1E293B;
-      --shadow: rgba(0, 0, 0, 0.28);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: var(--text);
-      background:
-        radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 30%),
-        radial-gradient(circle at top right, rgba(34, 211, 238, 0.10), transparent 28%),
-        var(--bg);
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 48px 20px;
-    }
-
-    header,
-    section {
-      background: rgba(17, 24, 39, 0.94);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 32px;
-      margin-bottom: 24px;
-      box-shadow: 0 16px 40px var(--shadow);
-    }
-
-    .hero {
-      padding: 42px 32px;
-    }
-
-    .eyebrow {
-      color: var(--accent);
-      font-size: 0.9rem;
-      font-weight: bold;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
-
-    h1 {
-      font-size: clamp(2.2rem, 5vw, 4rem);
-      line-height: 1.1;
-      margin: 0 0 12px;
-    }
-
-    h2 {
-      color: var(--primary);
-      font-size: 1.6rem;
-      margin: 0 0 18px;
-    }
-
-    h3 {
-      color: var(--accent);
-      margin: 0 0 10px;
-    }
-
-    p {
-      margin-top: 0;
-    }
-
-    .tagline {
-      color: var(--muted);
-      font-size: 1.15rem;
-      margin-bottom: 20px;
-    }
-
-    .hero-summary {
-      max-width: 760px;
-      font-size: 1.05rem;
-      color: var(--text);
-    }
-
-    .highlight {
-      color: var(--primary);
-      font-weight: bold;
-    }
-
-    .metrics {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-      margin-top: 28px;
-    }
-
-    .metric-card {
-      background: rgba(30, 41, 59, 0.72);
-      border: 1px solid rgba(56, 189, 248, 0.22);
-      border-radius: 14px;
-      padding: 18px;
-    }
-
-    .metric-number {
-      display: block;
-      color: var(--success);
-      font-size: 1.35rem;
-      font-weight: bold;
-      margin-bottom: 4px;
-    }
-
-    .metric-label {
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    .tools {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .tools span {
-      display: inline-block;
-      background: rgba(56, 189, 248, 0.08);
-      color: var(--text);
-      border: 1px solid rgba(56, 189, 248, 0.35);
-      padding: 8px 13px;
-      border-radius: 999px;
-      font-size: 0.92rem;
-    }
-
-    .project-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 18px;
-    }
-
-    .project {
-      background: rgba(30, 41, 59, 0.58);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 22px;
-    }
-
-    .project p:last-child {
-      margin-bottom: 0;
-    }
-
-    .label {
-      color: var(--muted);
-      font-weight: bold;
-    }
-
-    .result {
-      color: var(--success);
-      font-weight: bold;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-    }
-
-    .services li {
-      background: rgba(30, 41, 59, 0.58);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 14px 16px;
-    }
-
-    a {
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a:hover {
-      color: var(--accent);
-      text-decoration: underline;
-    }
-
-    .contact-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
-    .contact-links a {
-      background: rgba(56, 189, 248, 0.08);
-      border: 1px solid rgba(56, 189, 248, 0.35);
-      border-radius: 999px;
-      padding: 10px 14px;
-    }
-
-    @media (max-width: 720px) {
-      .container {
-        padding: 28px 14px;
-      }
-
-      header,
-      section {
-        padding: 24px;
-      }
-
-      .metrics,
-      .services {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding: 30px 24px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <main class="container">
 
     <header class="hero">
-      <div class="eyebrow">Operations • CRM • Automation</div>
 
-      <h1>Ali Berico</h1>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <span class="theme-icon">☾</span>
+        <span class="theme-text">Dark</span>
+      </button>
+
+      <p class="eyebrow">Operations • CRM • Automation • Systems</p>
+
+      <h1>Ali-Ace Berico</h1>
 
       <p class="tagline">
         Operations / CRM & Automation Specialist
@@ -252,126 +36,292 @@
         turning messy recurring tasks into <span class="highlight">cleaner, repeatable systems</span>.
       </p>
 
-      <div class="metrics">
+      <div class="metrics metrics-flow">
         <div class="metric-card">
-          <span class="metric-number">40–60 min</span>
-          <span class="metric-label">manual reporting process improved</span>
+          <span class="metric-label-top">Before</span>
+          <strong>40–60 min</strong>
+          <span>daily manual report preparation</span>
         </div>
 
-        <div class="metric-card">
-          <span class="metric-number">10–30 min</span>
-          <span class="metric-label">new daily report preparation range</span>
-        </div>
+        <div class="metric-arrow" aria-hidden="true">→</div>
 
         <div class="metric-card">
-          <span class="metric-number">CRM + Ops</span>
-          <span class="metric-label">workflow cleanup and automation support</span>
+          <span class="metric-label-top">After</span>
+          <strong>3–5 min</strong>
+          <span>report output process after automation</span>
         </div>
-      </div>
+
+        <div class="metric-arrow" aria-hidden="true">→</div>
+
+        <div class="metric-card">
+          <span class="metric-label-top">Impact</span>
+          <strong>90%+ faster</strong>
+          <span>less repetitive checking, formatting, and report prep</span>
+        </div>
+      </div>  
     </header>
 
+    
     <section>
-      <h2>Tools I Use</h2>
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Featured Operations & Automation Projects</h2>
+          <p class="section-intro">
+            Practical workflow improvements focused on reducing manual work, cleaning up data, and making recurring operations easier to manage.
+          </p>
+        </div>
 
-      <div class="tools">
-        <span>Keap / Infusionsoft</span>
-        <span>Zapier</span>
-        <span>Google Sheets</span>
-        <span>Eventbrite</span>
-        <span>ProspectBoss</span>
-        <span>PowerPoint</span>
-        <span>Google Drive</span>
-        <span>Gmail / Outlook</span>
+        <div class="project-grid featured-projects">
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-icon">📊</span>
+              <span class="project-type">Reporting Automation</span>
+            </div>
+
+            <h3>Daily Huddle Report Automation</h3>
+
+            <p><strong>Problem:</strong> Daily reporting required repetitive manual checking, formatting, and updates.</p>
+            <p><strong>What I improved:</strong> Built a cleaner reporting process using Google Sheets, CRM data, and automation support.</p>
+
+            <div class="project-result">
+              <span>Result</span>
+              <strong>Reduced daily report preparation from 40–60 minutes to around 3–5 minutes.</strong>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-icon">🔁</span>
+              <span class="project-type">CRM Workflow</span>
+            </div>
+
+            <h3>Feedback Email Automation</h3>
+
+            <p><strong>Problem:</strong> Post-event feedback follow-ups needed to be sent consistently after attendee activity.</p>
+            <p><strong>What I built:</strong> Supported an automation flow using CRM tags and scheduled reminders.</p>
+
+            <div class="project-result">
+              <span>Result</span>
+              <strong>Made follow-up tracking more reliable and reduced manual follow-up work.</strong>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-icon">🧹</span>
+              <span class="project-type">Data Cleanup</span>
+            </div>
+
+            <h3>Invalid Sign-Up Audit</h3>
+
+            <p><strong>Problem:</strong> Invalid or low-quality sign-ups needed a cleaner review process.</p>
+            <p><strong>What I built:</strong> Created an audit sheet to help identify, track, and clean up problematic records.</p>
+
+            <div class="project-result">
+              <span>Result</span>
+              <strong>Improved visibility and helped keep CRM/event data cleaner.</strong>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    <section>
+      <h2>Tools & Systems I Work With</h2>
+
+      <div class="tools-grid">
+        <div class="tool-card">
+          <span class="tool-icon">⚙️</span>
+          <div>
+            <strong>CRM Systems</strong>
+            <span>Keap / Infusionsoft, CRM cleanup, tagging, segmentation</span>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <span class="tool-icon">🔁</span>
+          <div>
+            <strong>Automation Tools</strong>
+            <span>Zapier, workflow triggers, system integrations</span>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <span class="tool-icon">📊</span>
+          <div>
+            <strong>Reporting & Data</strong>
+            <span>Google Sheets, dashboards, audits, data cleanup</span>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <span class="tool-icon">🤖</span>
+          <div>
+            <strong>AI Tools</strong>
+            <span>ChatGPT, Claude, Gemini for workflow support and documentation</span>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <span class="tool-icon">🐍</span>
+          <div>
+            <strong>Python</strong>
+            <span>Logic building, data grouping, automation support</span>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <span class="tool-icon">💻</span>
+          <div>
+            <strong>Development Tools</strong>
+            <span>VS Code, GitHub, HTML, CSS, basic JavaScript</span>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <span class="tool-icon">🧩</span>
+          <div>
+            <strong>Process Systems</strong>
+            <span>SOPs, recurring workflows, QA checks, task handoffs</span>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <span class="tool-icon">🗂️</span>
+          <div>
+            <strong>Operations Support</strong>
+            <span>Event operations, lead tracking, admin process improvement</span>
+          </div>
+        </div>
       </div>
     </section>
 
+      <section>
+        <div class="section-heading">
+          <p class="eyebrow">Systems Background</p>
+          <h2>Earlier Systems Projects</h2>
+          <p class="section-intro">
+            Academic and internship projects that built my foundation in workflow design, structured records, admin systems, and operational data management.
+          </p>
+        </div>
+
+        <div class="systems-grid">
+          <article class="system-card">
+            <div class="system-icon">🦷</div>
+            <h3>Dental Clinic Information Management System</h3>
+            <p>
+              Capstone system combining a customer-facing website with internal tools for patient records, appointments, messaging, and clinic admin workflows.
+            </p>
+            <div class="tag-list">
+              <span>Workflow Design</span>
+              <span>Appointments</span>
+              <span>Customer Records</span>
+            </div>
+          </article>
+
+          <article class="system-card">
+            <div class="system-icon">🏛️</div>
+            <h3>Local Government Unit Information Management System</h3>
+            <p>
+              Internship project supporting structured records for family information, sanitation-related areas, mapping, and geo-tagging.
+            </p>
+            <div class="tag-list">
+              <span>Data Organization</span>
+              <span>Admin Workflows</span>
+              <span>Geo-Tagged Records</span>
+            </div>
+          </article>
+
+          <article class="system-card">
+            <div class="system-icon">🚌</div>
+            <h3>Bus Company Management Information System</h3>
+            <p>
+              Modular MIS for organizing trip, bus, and employee records across separate operational sections.
+            </p>
+            <div class="tag-list">
+              <span>Modular Systems</span>
+              <span>Operational Records</span>
+              <span>Admin Dashboards</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
     <section>
-      <h2>Featured Projects</h2>
+      <div class="section-heading">
+        <p class="eyebrow">Services</p>
+        <h2>What I Can Help With</h2>
+        <p class="section-intro">
+          Practical support for teams that need cleaner workflows, better reporting, and more reliable day-to-day operations.
+        </p>
+      </div>
 
-      <div class="project-grid">
+      <div class="help-grid">
+        <div class="help-card">
+          <span>⚙️</span>
+          <strong>CRM Management</strong>
+          <p>CRM cleanup, tagging, segmentation, and workflow organization.</p>
+        </div>
 
-        <article class="project">
-          <h3>Daily Huddle Report Automation</h3>
+        <div class="help-card">
+          <span>📊</span>
+          <strong>Reporting Systems</strong>
+          <p>Google Sheets reporting, dashboards, audits, and recurring report prep.</p>
+        </div>
 
-          <p>
-            <span class="label">Problem:</span>
-            Daily reporting required repetitive manual checking, formatting, and updates.
-          </p>
+        <div class="help-card">
+          <span>🔁</span>
+          <strong>Workflow Automation</strong>
+          <p>Zapier support, workflow triggers, and repetitive task reduction.</p>
+        </div>
 
-          <p>
-            <span class="label">What I improved:</span>
-            Built a cleaner reporting process using Google Sheets, CRM data, and automation support.
-          </p>
+        <div class="help-card">
+          <span>🧩</span>
+          <strong>Process Documentation</strong>
+          <p>SOP creation, QA checks, task handoffs, and repeatable processes.</p>
+        </div>
 
-          <p>
-            <span class="label">Result:</span>
-            <span class="result">Reduced report preparation time from around 40–60 minutes per day to around 10–30 minutes per day.</span>
-          </p>
-        </article>
+        <div class="help-card">
+          <span>🗂️</span>
+          <strong>Operations Support</strong>
+          <p>Event operations, lead tracking, and admin process improvement.</p>
+        </div>
 
-        <article class="project">
-          <h3>Feedback Email Automation</h3>
-
-          <p>
-            <span class="label">Problem:</span>
-            Post-event feedback follow-ups needed to be sent consistently after attendee activity.
-          </p>
-
-          <p>
-            <span class="label">What I built:</span>
-            Supported an automation flow using CRM tags and scheduled reminders.
-          </p>
-
-          <p>
-            <span class="label">Result:</span>
-            <span class="result">Made follow-up tracking more reliable and reduced manual follow-up work.</span>
-          </p>
-        </article>
-
-        <article class="project">
-          <h3>Invalid Sign-Up Audit</h3>
-
-          <p>
-            <span class="label">Problem:</span>
-            Invalid or low-quality sign-ups needed a cleaner review process.
-          </p>
-
-          <p>
-            <span class="label">What I built:</span>
-            Created an audit sheet to help identify, track, and clean up problematic records.
-          </p>
-
-          <p>
-            <span class="label">Result:</span>
-            <span class="result">Improved visibility and helped keep CRM/event data cleaner.</span>
-          </p>
-        </article>
-
+        <div class="help-card">
+          <span>🧹</span>
+          <strong>Data Cleanup</strong>
+          <p>Audit sheets, record cleanup, visibility improvements, and cleaner tracking.</p>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2>What I Can Help With</h2>
+    <section class="contact-section">
+      <div class="contact-content">
+        <p class="eyebrow">Contact</p>
 
-      <ul class="services">
-        <li>CRM management and cleanup</li>
-        <li>Google Sheets reporting</li>
-        <li>Zapier and workflow automation support</li>
-        <li>SOP creation and process documentation</li>
-        <li>Event operations and lead tracking</li>
-        <li>Process improvement for recurring admin tasks</li>
-      </ul>
-    </section>
+        <h2>Need help improving an operations workflow?</h2>
 
-    <section>
-      <h2>Contact</h2>
+        <p class="contact-intro">
+          I’m open to remote operations, CRM, reporting, and automation support roles where I can help clean up recurring processes and make day-to-day execution more reliable.
+        </p>
 
-      <div class="contact-links">
-        <a href="mailto:theacevg@gmail.com">Email Me</a>
-        <a href="https://github.com/AceVG" target="_blank">GitHub</a>
+        <div class="contact-actions">
+          <a class="contact-button" href="mailto:aliaceberico@gmail.com">
+            <span class="contact-button-icon">✉️</span>
+            <span>aliaceberico@gmail.com</span>
+          </a>
+
+          <a class="contact-button secondary-contact" href="tel:+639085531048">
+            <span class="contact-button-icon">📱</span>
+            <span>Call / Text</span>
+          </a>
+        </div>
       </div>
     </section>
 
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
