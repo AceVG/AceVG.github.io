@@ -12,16 +12,29 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 
+<nav class="site-nav">
+  <a class="nav-brand" href="#top">Ali-Ace Berico</a>
+
+  <div class="nav-right">
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#tools">Tools</a>
+      <a href="#services">Services</a>
+      <a href="#systems">Systems</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+      <span class="theme-icon">☾</span>
+      <span class="theme-text">Dark</span>
+    </button>
+  </div>
+</nav>
+
 <body>
   <main class="container">
 
-    <header class="hero">
-
-      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
-        <span class="theme-icon">☾</span>
-        <span class="theme-text">Dark</span>
-      </button>
-
+    <header class="hero" id="top">
       <p class="eyebrow">Operations • CRM • Automation • Systems</p>
 
       <h1>Ali-Ace Berico</h1>
@@ -62,7 +75,7 @@
     </header>
 
     
-    <section>
+    <section id="work">
         <div class="section-heading">
           <p class="eyebrow">Selected Work</p>
           <h2>Featured Operations & Automation Projects</h2>
@@ -127,7 +140,7 @@
         </div>
       </section>
 
-    <section>
+    <section id="tools">
       <h2>Tools & Systems I Work With</h2>
 
       <div class="tools-grid">
@@ -197,7 +210,7 @@
       </div>
     </section>
 
-      <section>
+      <section id="systems">
         <div class="section-heading">
           <p class="eyebrow">Systems Background</p>
           <h2>Earlier Systems Projects</h2>
@@ -248,7 +261,7 @@
         </div>
       </section>
 
-    <section>
+    <section id="services">
       <div class="section-heading">
         <p class="eyebrow">Services</p>
         <h2>What I Can Help With</h2>
@@ -296,7 +309,7 @@
       </div>
     </section>
 
-    <section class="contact-section">
+    <section id="contact" class="contact-section">
       <div class="contact-content">
         <p class="eyebrow">Contact</p>
 
@@ -324,4 +337,7 @@
 
   <script src="script.js"></script>
 </body>
+
+
+
 </html>
