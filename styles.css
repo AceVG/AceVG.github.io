@@ -501,6 +501,7 @@ a:hover {
 }
 
 .contact-actions {
+  margin-top: 24px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
